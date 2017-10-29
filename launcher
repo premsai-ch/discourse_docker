@@ -721,7 +721,7 @@ case "$command" in
 
 
   scale_web)
-      $docker_path service scale web_only=0
+      $docker_path service scale web_only=0 #scale
       exit 0
       ;;
   rebuild)
