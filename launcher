@@ -718,6 +718,12 @@ case "$command" in
       scale_web
       exit 0
       ;;
+
+
+  scale_web)
+      $docker_path service scale web_only=0
+      exit 0
+      ;;
   rebuild)
       if [ "$(git symbolic-ref --short HEAD)" == "master" ]; then
         echo "Ensuring launcher is up to date"
