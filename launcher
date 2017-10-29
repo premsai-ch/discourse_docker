@@ -608,7 +608,7 @@ run_start() {
 }
 
 create_network(){
-    $docker_path  network create -d overlay --attachable discourse_network
+    $docker_path  network create -d overlay --attachable discourse_network 
 }
 run_bootstrap() {
 
